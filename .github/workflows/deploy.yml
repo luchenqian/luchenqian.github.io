@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: LUCHENQIAN
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 18
           cache: yarn
-
+          
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build website
