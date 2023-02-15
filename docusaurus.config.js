@@ -57,7 +57,17 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "interview",
+        path: "interview",
+        routeBasePath: "interview",
+        sidebarPath: require.resolve("./interview.js"),
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -70,13 +80,23 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
+          /* {
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
+          }, */
+          {
+            label: 'interview question',
+            to: "interview/intro",
+            position: 'left',
+            activeBaseRegex: "/interview/",
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/blog', 
+            label: 'Blog',
+            position: 'left'
+          },
           {
             href: 'https://luchenqian.github.io/',
             label: 'GitHub',
