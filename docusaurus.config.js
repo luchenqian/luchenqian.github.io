@@ -98,7 +98,7 @@ const config = {
             position: 'left'
           }, */
           {
-            href: 'https://luchenqian.github.io/',
+            href: 'https://github.com/luchenqian',
             label: 'GitHub',
             position: 'right',
           },
