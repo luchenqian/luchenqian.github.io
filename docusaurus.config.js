@@ -92,11 +92,11 @@ const config = {
             position: 'left',
             activeBaseRegex: "/interview/",
           },
-          {
+          /* {
             to: '/blog', 
             label: 'Blog',
             position: 'left'
-          },
+          }, */
           {
             href: 'https://luchenqian.github.io/',
             label: 'GitHub',
